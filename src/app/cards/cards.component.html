@@ -1,0 +1,17 @@
+<main>
+  <div class="d-flex align-item-center">
+    <div class="flex-grow-1">
+      <h1 class="page-title"></h1>
+  <p class="page-description">angular ile kartvizit app geliştiriyorum</p>
+    </div>
+    <button mat-raised-button color="primary" (click)="openAddCardModal()">Yeni Kartvizit</button>
+  </div>
+  <hr />
+  <div class="cards">
+    <div class="row">
+      <div class="col-12 col-md-3" *ngFor= "let card of cards"> 
+       <app-card-item [card]="card"></app-card-item>
+       </div>
+    </div>
+  </div>
+</main>
